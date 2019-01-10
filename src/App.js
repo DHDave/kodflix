@@ -28,7 +28,7 @@ class App extends Component {
           <div className='item'>
             <img src={starWarsVII} alt='StarWars seven' />
             <div className='overlay'>
-              <h1>Star Wars: The Force Awakens</h1>
+              <h1>Star Wars VII </h1>
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@ class App extends Component {
           <div className='item'>
             <img src={theBourneU} alt='the Bourne Ultimatum' />
             <div className='overlay'>
-              <h1>The Bourne Ultimatum'</h1>
+              <h1>The Bourne Ultimatum</h1>
             </div>
           </div>
           <div className='item'>
