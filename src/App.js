@@ -1,25 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import StarWars_img from './StarWars.jpg';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Hey dude, here we go oo!      
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React!!
-          </a>
-        </header>
+        <img src={StarWars_img} alt='Han Solo, Chewie, Ben and Luke' />
+        <br /><br /><br />
+        <div className= 'container'>
+          <div className='item'>ReactJS</div>
+          <div className='item'>HTML5</div>
+          <div className='item'>CSS3</div>
+        </div>
+        <div className= 'container'>
+          <div className='item'>Node.js</div>
+          <div className='item'>MongoDB</div>
+          <div className='item'>Heroku</div>
+        </div>
       </div>
     );
   }
