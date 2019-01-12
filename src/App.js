@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Movies from './Movies';
+import Gallery from './Gallery';
 import Details from './Details';
 
 import './App.css';
@@ -10,8 +10,8 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Route exact path='/' component={Movies} />
-          <Route exact path='/details' component={Details} />
+          <Route exact path='/' component={Gallery} />
+          <Route exact path='/:details' component={Details} />
         </div>
       </Router>
     );
