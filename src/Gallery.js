@@ -14,8 +14,6 @@ export default function Gallery(){
           <Stack id='thirteen' name='13 Reasons Why' img={thirteenReasonsWhyImage} />
           <Stack id='arrow' name='Arrow' img={arrow} />
           <Stack id='starwarsvii' name='Star Wars VII' img={starWarsVII} />
-        </div>
-        <div className='container'>
           <Stack id='thebourneultimatum' name='The Bourne Ultimatum' img={theBourneU} />
           <Stack id='thegoodfather' name='The Goodfather' img={theGoodfather} />
           <Stack id='paulapostolofchrist' name='Paul Apostol of Christ' img={paulAofChrist} />

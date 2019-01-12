@@ -3,7 +3,10 @@
 }
 
 .container {
-  display: flex;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 img {
@@ -11,7 +14,8 @@ img {
 }
 
 .item {
-  flex: 1;
+  /* flex: 1;
+  flex-basis: 120px; */
   border: 1px solid grey;
   position: relative;
   overflow: hidden;
@@ -32,11 +36,4 @@ img {
   display: block;
   opacity: .6;
   bottom: 0
-}
-
-@media only screen and (max-width: 600px) {
-
-  .container {
-    flex-direction: column;
-  }
 }
