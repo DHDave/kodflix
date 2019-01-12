@@ -7,12 +7,12 @@ export default function Gallery() {
     <div>
       <div className='container'>
         {
-          getTitles().map(stack  => (
+          getTitles().map(stack => (
             <Stack
-            key={stack.id}
-            id={stack.id}
-            name={stack.name}
-            img={stack.img} />
+              key={stack.id}
+              id={stack.id}
+              name={stack.name}
+              img={stack.img} />
           ))
         }
       </div>
