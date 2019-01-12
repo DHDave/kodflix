@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
-import Technologies from './Technologies';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Movies from './Movies';
+import Details from './Details';
 
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <br /><br /><br />
-        <Technologies />
-      </div>
+      <Router>
+        <div className="App">
+          <Route exact path='/' component={Movies} />
+          <Route exact path='/details' component={Details} />
+        </div>
+      </Router>
     );
   }
 }
-
-
 
 export default App;

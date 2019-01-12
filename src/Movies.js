@@ -7,7 +7,7 @@ import theBourneU from './images/TheBourneU.jpeg';
 import theGoodfather from './images/TheGoodfather.jpeg';
 import paulAofChrist from './images/PaulAofChrist.jpeg';
 
-export default function Technologies(){
+export default function Movies(){
     return (
       <div>  
         <div className='container'>
