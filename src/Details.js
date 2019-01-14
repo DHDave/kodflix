@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import getTitles from './titles-get';
 
 export default class Details extends React.Component {
@@ -19,12 +19,16 @@ export default class Details extends React.Component {
     }
 
     render() {
-        return (
-            <div>
-                <h1>{this.state.title.name}</h1>
-                <Link to='/' >Back to homepage</Link>
-            </div >
-        );
+        if (this.state.title === undefined) {
+            return <Redirect to='/not-found' />;
+        } else {
+            return (
+                <div>
+                    <h1>{this.state.title.name}</h1>
+                    <Link to='/' >Back to homepage</Link>
+                </div >
+            );
+        }
     }
 }
 
