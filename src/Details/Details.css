@@ -1,0 +1,8 @@
+.Details {
+    background-color: rgb(194, 185, 185);
+    align-content: center;
+}
+
+.Details .container .text {
+    padding: 15px;
+}
