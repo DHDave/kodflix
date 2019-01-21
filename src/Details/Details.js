@@ -26,6 +26,7 @@ export default class Details extends React.Component {
             return (
                 <div className='Details'>
                     <h1>{this.state.title.name}</h1>
+<<<<<<< HEAD
                     <div className='container is-small'>
                         <div className='column'>
                             <img
@@ -35,6 +36,16 @@ export default class Details extends React.Component {
                         <div className='column'>
                             {this.state.title.details}
                         </div>
+=======
+                    <div className='container'>
+                        <div className='text'>
+                            {this.state.title.details}
+                        </div>
+                        <img
+                            className='image'
+                            src={this.state.title.img}
+                            alt={this.state.title.name} />
+>>>>>>> 4bce1e498fafb3ff63bcfc1cf8feb533b348cbed
                     </div>
                     <Link to='/' >Back to homepage</Link>
                 </div >
