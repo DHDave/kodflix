@@ -1,15 +1,7 @@
 .Details {
-<<<<<<< HEAD
     align-content: center;
 }
 
 .Details .column {
-=======
-    background-color: rgb(194, 185, 185);
-    align-content: center;
-}
-
-.Details .container .text {
->>>>>>> 4bce1e498fafb3ff63bcfc1cf8feb533b348cbed
     padding: 15px;
 }
