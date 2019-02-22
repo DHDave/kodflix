@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import getTitles from '../titles-get';
+import getTitles from '../GetTitles/titles-get';
 import './Details.css';
 
 export default class Details extends React.Component {
