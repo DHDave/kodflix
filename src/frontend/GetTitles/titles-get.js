@@ -1,9 +1,9 @@
-import thirteenReasonsWhyImage from './images/13 Reason Why.jpeg';
-import arrow from './images/Arrow.jpeg';
-import starWarsVII from './images/StarWarsVII.jpeg';
-import theBourneU from './images/TheBourneU.jpeg';
-import theGoodfather from './images/TheGoodfather.jpeg';
-import paulAofChrist from './images/PaulAofChrist.jpeg';
+import thirteenReasonsWhyImage from '../common/images/13 Reason Why.jpeg';
+import arrow from '../common/images/Arrow.jpeg';
+import starWarsVII from '../common/images/StarWarsVII.jpeg';
+import theBourneU from '../common/images/TheBourneU.jpeg';
+import theGoodfather from '../common/images/TheGoodfather.jpeg';
+import paulAofChrist from '../common/images/PaulAofChrist.jpeg';
 
 export default function getTitles() {
   return [

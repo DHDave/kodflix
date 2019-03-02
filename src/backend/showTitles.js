@@ -21,7 +21,7 @@ let getShows = function() {
             synopsis: 'Bourne races to discover the final mysteries of his past while a government agent tries to track him down after a shootout in Moscow.'
         },
         {
-            id: 'thegoodfather',
+            id: 'thegodfather',
             title: 'The Goodfather',
             synopsis: 'Francis Ford Coppolas epic masterpiece features Marlon Brando in his Oscar-winning role as the patriarch of the Corleone family.'
         },
