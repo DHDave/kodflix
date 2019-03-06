@@ -11,7 +11,7 @@ export default class Stack extends React.Component {
           src={require(`../common/images/${id}.jpeg`)}
           alt={title}
         />
-        <div className='overlay'><h1>{title}</h1>
+        <div className='overlay'><h3>{title}</h3>
 
           {/* <img src={props.img} alt={props.name} />
         <div className='overlay'>
