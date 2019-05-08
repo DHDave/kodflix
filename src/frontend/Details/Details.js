@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
-// import getTitles from '../GetTitles/titles-get';
+import Loading from '../common/loading/Loading';
 import './Details.css';
 
 export default class Details extends React.Component {
@@ -14,10 +14,6 @@ export default class Details extends React.Component {
     }
     componentDidMount() {
         setTimeout(() => { this.changeMessage() }, 3000);
-        // let titleId = this.props.match.params.titleId;
-        // let title = getTitles()
-        //     .find((title) => title.id === titleId);
-        // this.setState({ title });
 
         fetch('/rest/shows')
             .then(response => response.json())
@@ -40,7 +36,7 @@ export default class Details extends React.Component {
             return show.id ?
                 <DetailsContent message={message} show={show} />
                 :
-                <div />;
+                <Loading />;
         }
         else {
             return <Redirect to='/not-found' />;
@@ -49,16 +45,15 @@ export default class Details extends React.Component {
 }
 
 function DetailsContent({ message, show}) {
-
-return (
-    <div className='Details'>
-        <h1>{show.title}</h1>
-        <div className='container is-small'>
-            <div className='column'>
-                <img
-                   src={require(`../common/images/${show.id}.jpeg`)}
-                   alt={show.title}
-                />
+    return (
+        <div className='Details'>
+            <h1>{show.title}</h1>
+            <div className='container is-small'>
+                <div className='column'>
+                    <img
+                        src={require(`../common/images/${show.id}.jpeg`)}
+                        alt={show.title}
+                    />
                 </div>
                 <div className='column'>
                     {show.synopsis}
@@ -66,7 +61,8 @@ return (
             </div>        
             <div className='details-left'>
                 <h1 className='details-left details-message'>
-                    {message}</h1> 
+                    {message}
+                </h1> 
             </div> 
             <Link to={'/'}>
                 <div className='home-button'>
